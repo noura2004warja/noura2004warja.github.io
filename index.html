@@ -213,19 +213,50 @@
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card">
-            <h3>🔍 Customer Segmentation Analysis</h3>
-            <p>Segmented e-commerce customers using SQL queries and Google Sheets</p>
-            <ul>
-                <li>Analyzed purchase history data</li>
-                <li>Identified high-value customer groups</li>
-                <li>Created RFM model</li>
-            </ul>
-            <div class="project-links">
-                <a href="#">Case Study</a>
-                <a href="#">GitHub</a>
-            </div>
-        </article>
+       <div class="project">
+  <h3>🌍 Global Water Access Analysis</h3>
+  <p>Analyzed JMP dataset (2000-2020) tracking SDG 6 progress for 200+ countries to identify water access inequalities.</p>
+
+  <!-- Image row -->
+  <div class="image-row">
+    <img src="water access global report.png" alt="water access global report" class="project-img">
+    <img src="water access summary sheet.png" alt="water access summary sheet" class="project-img">
+  </div>
+
+  <ul>
+    <li>Cleaned & analyzed national/rural/urban service level data</li>
+    <li>Developed service level metrics (Safely Managed → Surface Water)</li>
+    <li>Visualized urban-rural disparities using comparative analytics</li>
+  </ul>
+
+  <a href="https://github.com/noura2004warja/water-access-project-google-sheet-" 
+     class="github-link" 
+     target="_blank">
+    View analysis on GitHub
+  </a>
+</div>
+
+<style>
+  /* Add this to your existing CSS */
+  .image-row {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap; /* Allows images to stack on mobile */
+  }
+
+  .image-row img {
+    flex: 1;
+    min-width: 250px; /* Prevents images from getting too small */
+  }
+
+  /* Keep your existing .project-img styles */
+  .project-img {
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+</style>
     </section>
 </body>
 </html>
