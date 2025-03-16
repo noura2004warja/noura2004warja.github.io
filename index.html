@@ -3,48 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Noura Warja | Data Analyst</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
-    <div class="container mx-auto p-8 flex flex-col md:flex-row">
-        <!-- Left Sidebar -->
-        <aside class="w-full md:w-1/3 bg-white rounded-2xl shadow-lg p-6 mb-8 md:mb-0">
-            <img src="https://1drv.ms/i/c/09ff95407c2b3798/ETIJu84Xv-VLpbxqQZYI3AsBXcvBQ5CO21ZEmrKR2tqx-A?e=9cvdmw" alt="Noura Warja" class="rounded-full mx-auto mb-4">
-            <h2 class="text-2xl font-bold text-center">Noura Warja</h2>
-            <p class="text-center text-gray-600">Data Analyst junior</p>
-            <p class="text-center mt-4">I am a Data Analyst with a background in SQL, Power BI, and Google sheet. I am passionate about using data-driven insights to solve complex business challenges and drive strategic decision-making. </p><p class="text-center mt-4">Eager to learn and contribute to meaningful data projects!</p>
-            <div class="mt-6 text-center">
-                <a href="https://www.linkedin.com/in/noura-warja/" class="text-blue-600 hover:underline block">LinkedIn Profile</a>
-                <a href="https://github.com/noura2004warja" class="text-blue-600 hover:underline block">GitHub Profile</a>
-            </div>
-        </aside>
+    <title>Data Analyst Portfolio</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
 
-        <!-- Portfolio Section -->
-        <main class="w-full md:w-2/3 md:pl-32">
-            <h2 class="text-3xl font-bold mb-6">Portfolio</h2>
-            <section class="mb-8">
-    <h3 class="text-2xl font-semibold">Projects</h3>
-    <p class="text-gray-600 mb-4"></p>
-    </div>
-    <div class="mb-4">
-        <h4 class="text-xl font-semibold"><a href="https://drive.google.com/drive/folders/1GUpM7gtAKU-Spv7Kn8SABI2yMkJ2d8cv
-" class="text-blue-600 hover:underline">Water Quality and Infrastructure Analysis</a></h4>
-        <p class="text-gray-600 mb-4">This project focuses on analyzing water quality data, infrastructure improvements, and employee performance for water sources in various locations. The project uses SQL to join and filter data across multiple tables, identify problematic sources, and track project progress.</p>
-        <a href="https://github.com"><img src="Maji_first_page.png" alt="Water Quality and Infrastructure Analysis" class="rounded-xl"></a>
-    </div>
-    <div class="mb-4">
-        <h4 class="text-xl font-semibold"><a href="https://github.com" class="text-blue-600 hover:underline">Human Resources Analysis Dashboard</a></h4>
-        <p class="text-gray-600 mb-4">This dashboard provides comprehensive HR analytics, tracking company employee activities and behaviours.</p>
-        <a href="https://github.com"><img src="HR_Analysis.png" alt="Revenue Analysis Dashboard" class="rounded-xl"></a>
-    </div>
-    <div class="mb-4">
-        <h4 class="text-xl font-semibold"><a href="https://github.com" class="text-blue-600 hover:underline">Operational Efficiency Dashboard</a></h4>
-        <p class="text-gray-600 mb-4">Focused on operational KPIs, this dashboard highlights bottlenecks and inefficiencies, driving informed decision-making to enhance productivity.</p>
-        <a href="https://github.com"><img src="Yemen_Nutrition_cluster.jpg" alt="Operational Efficiency Dashboard" class="rounded-xl"></a>
-    </div>
-</section>
-        </main>
-    </div>
+        /* Introduction Section */
+        .intro {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .intro h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .intro h2 {
+            color: #3498db;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+        }
+
+        /* Skills & Tools */
+        .skills-tools {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .skills, .tools {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Utilities */
+        .cta {
+            color: #27ae60;
+            font-weight: 600;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h1>Hi, I'm Noura Warja</h1>
+        <h2>Junior Data Analyst </h2>
+        
+        <p class="description">
+            Equipped with analytical rigor from CPGE and technical skills from ALX's Data Analytics program. 
+            Passionate about turning data into actionable insights using SQL, Power BI, and Google Sheets.
+        </p>
+
+        <div class="skills-tools">
+            <div class="skills">
+                <h3>Core Skills</h3>
+                <ul>
+                    <li>Data Cleaning & Preparation</li>
+                    <li>Dashboard Development</li>
+                    <li>Statistical Analysis</li>
+                </ul>
+            </div>
+
+            <div class="tools">
+                <h3>Technical Toolkit</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Power BI</li>
+                    <li>Google Sheets</li>
+                    <li>Python (Basics)</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="cta">Eager to learn and contribute to meaningful data projects!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <!-- Project 1 -->
+        <article class="project-card">
+            <h3>📊 Sales Performance Dashboard</h3>
+            <p>Created interactive Power BI dashboard tracking key metrics for retail business</p>
+            <ul>
+                <li>Cleaned & transformed raw sales data</li>
+                <li>Developed DAX formulas for KPIs</li>
+                <li>Visualized regional performance trends</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">View Dashboard</a>
+                <a href="#">GitHub</a>
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <h3>🔍 Customer Segmentation Analysis</h3>
+            <p>Segmented e-commerce customers using SQL queries and Google Sheets</p>
+            <ul>
+                <li>Analyzed purchase history data</li>
+                <li>Identified high-value customer groups</li>
+                <li>Created RFM model</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">Case Study</a>
+                <a href="#">GitHub</a>
+            </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <h3>📈 Inventory Optimization Report</h3>
+            <p>Developed Google Sheets model to predict stock requirements</p>
+            <ul>
+                <li>Automated data updates with formulas</li>
+                <li>Reduced overstock by 18% in simulation</li>
+                <li>Created dynamic visualizations</li>
+            </ul>
+            <div class="project-links">
+                <a href="#">View Report</a>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
